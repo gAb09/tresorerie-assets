@@ -541,9 +541,13 @@ td.st_www{
     background-color: #E0C8A3;
 }
 
+td.st_releve button{
+    color: #5f835f;
+}
+
 td.st_prev button,
 td.st_emise button{
-    color: #fff;;
+    color: #fff;
 }
 
 
