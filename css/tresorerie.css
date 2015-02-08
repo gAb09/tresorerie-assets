@@ -65,6 +65,10 @@ ul.nav li:hover{
     color:#0088CC;
 }
 
+.container-fluid{
+    padding-left: 40px;
+}
+
 /* –––––––––––––––––––– Perso –––––––––––––––––––––––– */
 
 div.zapette {
@@ -183,6 +187,9 @@ footer {
     display:block;
 }
 
+
+/* –––––––––––––––––––– Menus –––––––––––––––––––––––– */
+
 .navbar .nav > li > .dropdown-menu:after {
     border-bottom: 6px solid #DDBF8B;
 }
@@ -224,6 +231,71 @@ nav.menus {
     top: 4px;
     margin-left: -2%;
 }
+
+
+/* –––––––––––––––––––– Menus left –––––––––––––––––––––––– */
+nav.navleft {
+    background-color: #5F835F;
+    position: fixed;
+    padding-top: 5px;
+    width: 22px;
+    left: 0px;
+    top:15%;
+}
+
+nav.navleft ul{
+    margin: 0 0 10px 21px;
+}
+
+nav.navmodes, ul.navconfig {
+    text-align: right;
+}
+
+nav.navmodes ul li, ul.navconfig {
+    background-color: #5F835F;
+    position: relative;
+    transition: left 1s;
+    width: 112px;
+    left: -111px;
+    display:block;
+    line-height: 25px;
+    padding-right: 0;}
+
+ul.navconfig {
+    left: -119px;
+    width: 120px;
+}
+
+ul.navconfig li ul.dropdown-menu{
+    left:76px;
+    min-width: 90px;
+    padding: 0;
+}
+
+ul.navconfig li ul li{
+    text-align: left;
+}
+
+ul.navconfig ul li ul li{
+    left: -83px;
+}
+
+nav.navmodes ul li:hover{
+    transition: left 1s;
+    transition-delay: 1s;
+    left:-1px;
+}
+
+
+nav.navleft a, nav.navleft span, nav.navleft span:before{
+    padding-right:0;
+    color: #FFF;
+}
+
+nav.navleft span:before{
+    padding-left:3px;
+}
+
 
 /* –––––––––––––––––––– Perso –––––––––––––––––––––––– */
 div.messages{
@@ -644,6 +716,133 @@ div.ongletGb{
 
 
 
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+                                     ICONES
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.iconesmall:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-right: 5px;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.iconemedium:before {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    margin-right: 5px;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icoclose:before {
+    content: "D";
+}
+
+.icohidemessages:before {
+    content: "a";
+    font-size: 24px;
+}
+
+.icoshowmessages:before {
+    content: "i";
+    font-size: 24px;
+}
+
+.edit:before {
+    content: "e";
+    color: #bfb450;
+}
+
+.delete:before {
+    content: "d";
+}
+
+.enr:before {
+    content: "S";
+}
+
+.add:before {
+    content: "C";
+}
+
+.toggle:before {
+    content: "t";
+}
+
+.list:before {
+    content: "L";
+}
+
+.double:before {
+    content: "2";
+    color: #9c110b
+}
+
+.dupli:before {
+    padding-right:5px;
+    content: "x";
+    color: #2d2d8b
+}
+
+.asc:before, .desc:before {
+    font-size: 1.3em;
+    opacity: 0.7;
+    padding-right:5px;
+    vertical-align: top;
+}
+
+.asc:before {
+    content: "a";
+}
+
+.desc:before {
+    content: "i";
+}
+
+.mode_journal:before {
+    content: "L";
+}
+
+.mode_pointage:before {
+    content: "s";
+}
+
+.mode_previsionnel:before {
+    content: "P";
+}
+
+.mode_recherche:before {
+    content: "f";
+}
+
+.mode_analytique:before {
+    content: "g";
+}
+
+.mode_configuration:before {
+    content: "R";
+}
 
 
 /*  ???????????????????    */
@@ -657,6 +856,5 @@ div.ongletGb{
 div.contenu /*h5{
     margin-top:-9px;
     }*/
-
 
 
