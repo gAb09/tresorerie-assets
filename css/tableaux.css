@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/* –––––––––––––––––––– TABLEAUX –––––––––––––––––––––––– */
+
+table.modes thead {
+    position: fixed;
+    top:36px;
+    left:0px;
+    margin-left: 0px;
+    padding-left: 32px;
+    width: 97%;
+	z-index: 1000;
+}
+
+table {
+    width: 100%;
+    border-color: #8CB08C;
+    border-style: solid;
+    border-width: 1px;
+}
+
+thead,
+tbody {
+    transition: opacity 1.3s;
+    border-color: #5F835F;
+    border-style: solid;
+    border-width: 1px;
+}
+
+thead.replie,
+tbody.replie {
+    transition: opacity 0s;
+    overflow: auto;
+    opacity: 0;
+    display:table-column-group;
+}
+
+thead{
+    background-color: #5F835F;
+    color: #F5E1B3;
+}
+
+td, th {
+    border-color: #5F835F;
+    border-style: none;
+    border-width: 1px;
+    padding: 3px 0 0 5px;
+}
+
+/* Infobulles pour les dates */
+td.info:hover,td.info:focus
+{
+    box-shadow:0 1px 0 rgba(255,255,255,.4);
+}
+
+td.info span{
+    position:absolute;
+/*    margin-top:18px;
+*/    margin-left: 40px;
+    color:#FFF; background-color:#C9A945;
+    padding:0px 4px;
+    border-radius:3px;
+    box-shadow:0 0 2px rgba(0,0,0,.5);
+    transform:scale(0) rotate(-12deg);
+    transition:all .25s;
+    opacity:0;
+   }
+
+td.info:hover span, td.info:focus span{
+transform:scale(1) rotate(0);
+     opacity:1;
+ }
+
+
+th {
+    font-weight: bold;
+    font-size: .9em;
+}
+
+th.tri_selon {
+    background-color: #395D39;
+}
+
+
+tr.surlignage:hover{
+    border-width: 3px;
+    border-color: #777722;
+    box-shadow: 0px 0px 16px #aaa;
+}
+
+caption.ligne_mois{
+    background-color: rgba(255, 255, 255, 0.1);
+    color:#5F835F;
+    text-align: left;
+    padding-left: 5px;
+    border: medium none;
+    font-size: 16px;
+    line-height: 28px;
+    box-shadow: 0px 2px 0px #aaa;
+}
+
+
+td.niv2, td.before_niv2{
+    border-style:none;
+}
+
+td input[type="text"] {
+  width: 30px;
+  height: 11px;
+  margin: 6px 8px;
+  opacity: 0.7;
+}
+
+td.gras{
+    font-weight: bold;
+    font-size: 1.12em;
+}
+
+.icone { 
+    width: 2%;
+    min-width: 20px;
+    color: #395D39;
+}
+
+.edit:before, .dupli:before, .double:before{ 
+    padding-left: 5px;
+    font-size: 1.12em;
+}
+
+th.edit:before, th.dupli:before, th.double:before{ 
+    color: #f5e1b3;
+}
+
+.statut { 
+    width: 4%;
+    min-width: 40px;
+}
+
+.date { 
+    width: 10%;
+    min-width: 100px;
+}
+
+.montant { 
+    width: 7%;
+    min-width: 72px;
+    text-align: right;
+}
+
+.padding{ 
+    padding-right: 5px;
+}
+
+.banque { 
+    width: 7%;
+    min-width: 70px;
+    text-align: left;
+}
+

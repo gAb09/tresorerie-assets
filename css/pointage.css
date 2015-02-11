@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.type { 
+    width: 19%;
+    min-width: 150px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.libelle { 
+    width: 22%;
+    min-width: 220px;
+}
+
+.compte { 
+    width: 18%;
+    min-width: 190px;
+    text-align: left;
+}

@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+/* –––––––––––––––––––– surcharge Bootstrap –––––––––––––––––––––––– */
+body, .hero-unit, .navbar-inner {
+    background-color: #EDDCC1;
+}
+
+.navbar {
+    box-shadow: 3px 3px 3px #D8B979;
+}
+
+.navbar .nav > li > a {
+    color: #CC0000;
+    font-size: 16px;
+    text-shadow:none;
+}
+
+
+.navbar .nav > .active > a, .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus,
+.navbar .nav > .active.dropdown > a, .navbar .nav > .active.dropdown > a:hover, .navbar .nav > .active.dropdown > a:focus {
+    background-color: #C33;
+    box-shadow: 1px 1px 1px 1px #059;
+    color: #FFEEEE;
+}
+
+ul.nav li:hover{
+    color:#0088CC;
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  MENU SECTIONS +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+nav.sections{
+    background-color: #C8A94C;
+    position: fixed;
+    height: 47px;
+    top: -43px;
+    margin-bottom: 0px;
+    left: 0px;
+    z-index: 100;
+    transition-property: top;
+    transition-duration: 0.3s;
+}
+
+nav.sections:hover {
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    transition-property: top;
+    transition-duration: 0.6s;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  SOUS MENU NAVLEFT (Modes & Configurations) +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+nav.navleft a, nav.navleft span, nav.navleft span:before{
+    padding-right:0;
+    color: #FFF;
+}
+
+nav.navleft span:before{
+    padding-left:3px;
+}
+
+nav.navleft {
+    background-color: #5F835F;
+    position: fixed;
+    padding-top: 10px;
+    width: 22px;
+    left: 0px;
+    top:56px;
+}
+
+nav.navleft ul{
+    margin: 0 0 10px 21px;
+}
+
+nav.navmodes, ul.navconfig {
+    text-align: right;
+}
+
+nav.navmodes ul li, ul.navconfig {
+    background-color: #5F835F;
+    position: relative;
+    transition: left 1s;
+    width: 112px;
+    left: -111px;
+    display:block;
+    line-height: 25px;
+    padding-right: 0;}
+
+nav.navmodes ul li:hover{
+    transition: left 1s;
+    transition-delay: 1s;
+    left:-1px;
+}
+
+ul.navconfig {
+    left: -119px;
+    width: 120px;
+}
+
+ul.navconfig li ul.dropdown-menu{
+    left:76px;
+    min-width: 90px;
+    padding: 0;
+}
+
+ul.navconfig li ul li{
+    text-align: left;
+}
+
+ul.navconfig ul li ul li{
+    left: -83px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  TOP CONTENT +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.topcontent{
+	background-color: #EDDCC1;
+	position:fixed;
+	top:0px;
+	height:56px;
+    z-index: 800;
+}
+
+/* –––––––––––––––––––– Titrepage  –––––––––––––––––––––––– */
+.titrepage h1 {
+    margin: 0;
+    font-size:22px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  CONTENT +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.content{
+    margin-left: 32px;
+    width: 97%;
+    margin-top: 65px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  Actions +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+div.actions {
+    height: auto;
+}
+
+.actions_infos {
+    font-size: 0.9em;
+    color:#CCC;
+    text-align:center;
+    margin-right:5px;
+}
+
+
+.actions_infos {
+    font-size: 0.9em;
+    color:#CCC;
+    text-align:center;
+    margin-right:5px;
+}
+
+.actions_infos span{
+    margin-left:5px;
+    margin-right:5px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+	background-color: #5F835F;
+	text-align: center;
+    width:100%;
+}
+
