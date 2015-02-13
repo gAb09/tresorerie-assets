@@ -126,7 +126,7 @@ ul.navconfig ul li ul li{
 
 /* –––––––––––––––––––– Titrepage  –––––––––––––––––––––––– */
 .titrepage h1 {
-    margin-left: 35px;
+    margin: 0 0 0 35px;
     font-size:22px;
 }
 
