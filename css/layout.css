@@ -93,7 +93,7 @@ nav.navmodes ul li, ul.navconfig {
 nav.navmodes ul li:hover{
     transition: left 1s;
     transition-delay: 1s;
-    left:-1px;
+    left:-20px;
 }
 
 ul.navconfig {
