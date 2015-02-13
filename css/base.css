@@ -152,7 +152,7 @@ div.messages{
     position: fixed;
     margin-left: 0px;
     left: 0px;
-    z-index: 300;
+    z-index: 800;
     top:0px;
     width:auto;
     height:auto;

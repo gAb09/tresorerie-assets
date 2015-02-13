@@ -41,7 +41,7 @@ nav.sections{
     top: -43px;
     margin-bottom: 0px;
     left: 0px;
-    z-index: 801;
+    z-index: 600;
     transition-property: top;
     transition-duration: 0.3s;
 }
@@ -121,12 +121,12 @@ ul.navconfig ul li ul li{
 	position:fixed;
 	top:0px;
 	height:56px;
-    z-index: 800;
+    z-index: 200;
 }
 
 /* –––––––––––––––––––– Titrepage  –––––––––––––––––––––––– */
 .titrepage h1 {
-    margin: 0;
+    margin-left: 35px;
     font-size:22px;
 }
 

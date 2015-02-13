@@ -9,7 +9,7 @@ table.modes thead {
     margin-left: 0px;
     padding-left: 32px;
     width: 97%;
-	z-index: 1000;
+	z-index: 400;
 }
 
 table {
