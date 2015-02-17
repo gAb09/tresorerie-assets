@@ -66,6 +66,11 @@ td.info span{
     opacity:0;
    }
 
+td.info span.left{
+    right: 9px;
+    margin-top:27px;
+   }
+
 td.info:hover span, td.info:focus span{
 transform:scale(1) rotate(0);
      opacity:1;
@@ -83,9 +88,13 @@ th.tri_selon {
 
 
 tr.surlignage:hover{
-    border-width: 3px;
-    border-color: #777722;
     box-shadow: 0px 0px 16px #aaa;
+}
+
+tr.note{
+    border-style: dashed none;
+    border-width: 1px;
+    border-color: red;
 }
 
 caption.ligne_mois{
