@@ -67,8 +67,8 @@ td.info span{
    }
 
 td.info span.left{
-    right: 9px;
-    margin-top:27px;
+    left: 0;
+    margin-top:25px;
    }
 
 td.info:hover span, td.info:focus span{
@@ -87,11 +87,11 @@ th.tri_selon {
 }
 
 
-tr.surlignage:hover{
+table tr:hover{
     box-shadow: 0px 0px 16px #aaa;
 }
 
-tr.note{
+td.note{
     border-style: dashed none;
     border-width: 1px;
     border-color: red;
@@ -161,8 +161,8 @@ th.edit:before, th.dupli:before, th.double:before{
 }
 
 .banque { 
-    width: 7%;
-    min-width: 70px;
+    width: 9%;
+    min-width: 90px;
     text-align: left;
 }
 
