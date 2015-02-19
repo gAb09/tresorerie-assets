@@ -113,13 +113,14 @@ td.niv2, td.before_niv2{
     border-style:none;
 }
 
+/* 
 td input[type="text"] {
   width: 30px;
-  height: 11px;
+  height: 11px; 
   margin: 6px 8px;
   opacity: 0.7;
 }
-
+*/
 td.gras{
     font-weight: bold;
     font-size: 1.12em;
