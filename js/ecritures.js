@@ -75,10 +75,10 @@ function banque() {
 
 
 
-	function tri(path, param) {
+	function tri(path, entete) {
 		var nbre_par_page = document.getElementById('nbre_par_page').value;
 		var sens_tri = document.getElementById('sens_tri').value;
-		var critere = param.id;
+		var critere = entete.id;
 		var prev_critere_tri = document.getElementById('prev_critere_tri').value;
 
 		if (prev_critere_tri === critere) {
