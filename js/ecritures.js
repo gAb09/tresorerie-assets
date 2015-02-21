@@ -117,6 +117,7 @@ function banque() {
 		location.href = adresse;
 	}
 
+
 	function bascule_compte(label) {
 		var bouton = document.getElementById("desactive_compte");
 		var div = document.getElementById("div_compte_activation");
