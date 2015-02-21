@@ -76,12 +76,12 @@ function banque() {
 
 
 	function tri(path, param) {
-		var par_page = document.getElementById('par_page').value;
+		var nbre_par_page = document.getElementById('nbre_par_page').value;
 		var sens_tri = document.getElementById('sens_tri').value;
 		var critere = param.id;
-		var prev_tri_sur = document.getElementById('prev_tri_sur').value;
+		var prev_critere_tri = document.getElementById('prev_critere_tri').value;
 
-		if (prev_tri_sur === critere) {
+		if (prev_critere_tri === critere) {
 			if(sens_tri == "asc"){
 				sens = "desc";
 			}else{
@@ -90,16 +90,16 @@ function banque() {
 		}else{
 			sens = "asc";
 		}
-		var adresse = path+"?tri_sur="+critere+"&sens_tri="+sens+"&par_page="+par_page;
+		var adresse = path+"?critere_tri="+critere+"&sens_tri="+sens+"&nbre_par_page="+nbre_par_page;
 		// alert( adresse);
 		location.href = adresse;
 	}
 
 
-	function changeParPage(path, tri_sur, sens) {
-		var par_page = document.getElementById('par_page').value;
+	function changeParPage(path, critere_tri, sens) {
+		var nbre_par_page = document.getElementById('nbre_par_page').value;
 
-		var adresse = path+"?tri_sur="+tri_sur+"&sens_tri="+sens+"&par_page="+par_page;
+		var adresse = path+"?critere_tri="+critere_tri+"&sens_tri="+sens+"&nbre_par_page="+nbre_par_page;
 		// alert( adresse);
 		location.href = adresse;
 	}
