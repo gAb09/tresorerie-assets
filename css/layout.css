@@ -125,9 +125,17 @@ ul.navconfig ul li ul li{
 }
 
 /* –––––––––––––––––––– Titrepage  –––––––––––––––––––––––– */
-.titrepage h1 {
+div#titrepage {
     margin: 0 0 0 35px;
-    font-size:22px;
+}
+
+div#titrepage h1 {
+    font-size: 22px;
+    line-height: 0;
+    padding: 16px 0 0 0;}
+
+div#titrepage p {
+    margin-top: 0;
 }
 
 /* +++++++++++++++++++++++++++++++++++++++++++++  CONTENT +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
