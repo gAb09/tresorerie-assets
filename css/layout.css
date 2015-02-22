@@ -119,22 +119,23 @@ ul.navconfig ul li ul li{
 .topcontent{
 	background-color: #EDDCC1;
 	position:fixed;
-	top:0px;
+	top:0;
 	height:56px;
     z-index: 200;
 }
 
 /* –––––––––––––––––––– Titrepage  –––––––––––––––––––––––– */
-div#titrepage {
+.row-fluid [class*="span"].titrepage{
     margin: 0 0 0 35px;
 }
 
-div#titrepage h1 {
+.titrepage h1 {
     font-size: 22px;
     line-height: 0;
-    padding: 16px 0 0 0;}
+    padding: 16px 0 0 0;
+}
 
-div#titrepage p {
+.titrepage p {
     margin-top: 0;
 }
 
