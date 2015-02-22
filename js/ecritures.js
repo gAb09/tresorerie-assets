@@ -39,40 +39,17 @@ function banque() {
 	var label = document.getElementById("label_flag");
 
 	/* S’il est coché écriture double */
-		if (select.checked === true)
-		{
-			div.className="input"; /* Si oui on affiche la div banque liée */
-			label.innerHTML="Écriture double";
-		}
-		else
-		{
-			div.className="input hidden";
-			label.innerHTML="Écriture simple";
-		}
+	if (select.checked === true)
+	{
+		div.className="input"; /* Si oui on affiche la div banque liée */
+		label.innerHTML="Écriture double";
 	}
-
-	function separateur(select) {
-		var num = select.id.replace('type_id', '');
-		var div = document.getElementById("divjustificatif" + num);
-		var type_id = select.value;
-		var span = document.getElementById("sep" + num);
-		var hidden_input = document.getElementById("req_justif" + num);
-
-		hidden_input.value = req_justif[type_id];
-
-		// alert(req_justif[type_id] + sep);
-		// alert(hidden_input.value);
-
-		if(req_justif[type_id] === '0')
-		{
-			div.className = 'input hidden';
-		}else{
-			var sep = seps[type_id];
-			div.className = 'input';
-			span.innerHTML = sep;
-		}
+	else
+	{
+		div.className="input hidden";
+		label.innerHTML="Écriture simple";
 	}
-
+}
 
 
 	function tri(path, entete) {

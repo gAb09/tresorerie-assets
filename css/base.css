@@ -269,6 +269,21 @@ input[title~=Supprimer]{
     background-color: #00FFFF;
 }
 
+/* Sous élément d'un élément class = "locked" */
+div.locked  {
+ color: #999;
+}
+
+div.locked input {
+ color: #999;
+}
+
+div.aide {
+ display: inline-block;
+ font-size: .9em;
+ line-height: 1.1em;
+}
+
 div.aide {
  display: inline-block;
  font-size: .9em;
