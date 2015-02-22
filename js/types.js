@@ -1,4 +1,4 @@
-function justifToggle() {
+function toggleJustif() {
 	var label = document.getElementById("justif_label");
 	var check = document.getElementById("justif_check");
 	var div = document.getElementById("statut_justif_div");
