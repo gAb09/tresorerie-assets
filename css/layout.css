@@ -146,6 +146,11 @@ ul.navconfig ul li ul li{
     margin-top: 65px;
 }
 
+/* –––––––––––––––––––– Évite que le bas de la pdiv "content" passe sous le footer  –––––––––––––––––––––––– */
+.chassebaspage {
+    height: 150px;
+}
+
 /* +++++++++++++++++++++++++++++++++++++++++++++  Actions +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 div.actions {
