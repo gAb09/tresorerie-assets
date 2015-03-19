@@ -16,10 +16,10 @@ function bascule_statut(xxx) {// aFa automatiser l'attribution du nom de la clas
 	var input = document.getElementById('input_' + id_ecriture);
 
 
-	// Incrémenter le statut en tenant compte des statuts accessibles
+	// Incrémenter le statut en tenant compte des statuts autorisés
 	var statut_actuel = parseInt(input.value, 10);
 
-	var part = statuts_accessibles.split("-");
+	var part = statuts_autorised.split("-");
 	var nbre = part.length - 1;
 	var last_statut_accessible = part[nbre];
 
@@ -28,7 +28,7 @@ function bascule_statut(xxx) {// aFa automatiser l'attribution du nom de la clas
 	if(statut_actuel < last_statut_accessible){
 		new_statut = statut_actuel + 1;
 	}else{
-		new_statut = statuts_accessibles[0];
+		new_statut = statuts_autorised[0];
 	}
 
 	// Changer les classes
