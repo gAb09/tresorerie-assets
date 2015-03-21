@@ -416,13 +416,13 @@ div.compte.actif{
     color:#0088CC;
 }
 
-.solde_cumul{
+.cumul_global{
     text-align: right;
     color:#0088CC;
 }
 
 
-.soldes{
+.cumuls{
     background-color: #E5CEA2;
     font-weight: bold;
     text-align: left;
