@@ -90,42 +90,42 @@ nav.navmodes ul li, ul.navconfig {
     line-height: 25px;
     padding-right: 0;}
 
-nav.navmodes ul li:hover{
-    transition: left 1s;
-    transition-delay: 1s;
-    left:-20px;
-}
+    nav.navmodes ul li:hover{
+        transition: left 1s;
+        transition-delay: 1s;
+        left:-20px;
+    }
 
-ul.navconfig {
-    left: -119px;
-    width: 120px;
-}
+    ul.navconfig {
+        left: -119px;
+        width: 120px;
+    }
 
-ul.navconfig li ul.dropdown-menu{
-    left:76px;
-    min-width: 90px;
-    padding: 0;
-}
+    ul.navconfig li ul.dropdown-menu{
+        left:76px;
+        min-width: 90px;
+        padding: 0;
+    }
 
-ul.navconfig li ul li{
-    text-align: left;
-}
+    ul.navconfig li ul li{
+        text-align: left;
+    }
 
-ul.navconfig ul li ul li{
-    left: -83px;
-}
+    ul.navconfig ul li ul li{
+        left: -83px;
+    }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++  TOP CONTENT +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-.topcontent{
-	background-color: #EDDCC1;
-	position:fixed;
-	top:0;
-	height:56px;
-    z-index: 200;
-}
+    /* +++++++++++++++++++++++++++++++++++++++++++++  TOP CONTENT +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+    .topcontent{
+       background-color: #EDDCC1;
+       position:fixed;
+       top:0;
+       height:56px;
+       z-index: 200;
+   }
 
-/* –––––––––––––––––––– Titrepage  –––––––––––––––––––––––– */
-.row-fluid [class*="span"].titrepage{
+   /* –––––––––––––––––––– Titrepage  –––––––––––––––––––––––– */
+   .row-fluid [class*="span"].titrepage{
     margin: 0 0 0 35px;
 }
 
@@ -183,8 +183,74 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
-	background-color: #5F835F;
-	text-align: center;
+    background-color: #5F835F;
+    text-align: center;
     width:100%;
 }
 
+footer > .version{
+    z-index: 3000;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  TOP FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.topfooter > div.actions,
+.topfooter > div.prefs,
+.topfooter > div.affichage{
+    background-color: #5F835F;
+    text-align: center;
+    position: fixed;
+    width: 33.33%;
+    transition-property: bottom;
+    transition-duration: 1s;
+}
+
+.topfooter > div.actions:hover,
+.topfooter > div.prefs:hover,
+.topfooter > div.affichage:hover{
+    bottom: 20px;
+    transition-property: bottom;
+    transition-duration: 0.6s;
+}
+
+
+.topfooter  span{
+    display: inline-block;
+    width: 100%;
+    background-color: #000;
+    color: #DDD;
+    opacity: 0.4;
+    height: 20px;
+    position: relative;
+}
+
+/* - - - - - - Actions - - - -  */
+
+.topfooter > div.actions{
+    bottom: -60px;
+    height: 100px;
+    left: 0;
+    /*background-color: #F00;*/
+}
+
+
+/* - - - - - - Prefs - - - -  */
+
+.topfooter > div.prefs{
+    left: 0px;
+    bottom: -60px;
+    height: 100px;
+    margin : 0 33.33%;
+    /*background-color: #0F0;*/
+}
+
+
+/* - - - - - - Affichage - - - -  */
+
+.topfooter > div.affichage{
+    bottom: -60px;
+    height: 100px;
+    right: 0;
+    /*background-color: #00F;*/
+}

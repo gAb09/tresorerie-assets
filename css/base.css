@@ -72,6 +72,7 @@ strong{
 .badge-locale {
   float: left;
   margin-right: 10px;
+  width: auto;
 }
 
 .badge>a, .label>a {
