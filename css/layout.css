@@ -67,7 +67,8 @@ nav.navleft {
     background-color: #5F835F;
     position: fixed;
     padding-top: 10px;
-    width: 22px;
+    min-width: 22px;
+    width: 1%;
     left: 0px;
     top:56px;
 }
@@ -141,8 +142,8 @@ nav.navmodes ul li, ul.navconfig {
 
 /* +++++++++++++++++++++++++++++++++++++++++++++  CONTENT +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 .content{
-    margin-left: 32px;
-    width: 97%;
+    margin-left: 2%;
+    width: 98%;
     margin-top: 65px;
 }
 
