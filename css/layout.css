@@ -152,11 +152,96 @@ nav.navmodes ul li, ul.navconfig {
     height: 150px;
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++  Actions +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-div.actions {
-    height: auto;
+/* +++++++++++++++++++++++++++++++++++++++++++++  FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #5F835F;
+    text-align: center;
+    width:100%;
 }
+
+footer > .version{
+    z-index: 3000;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  TOP FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.topfooter > div.topfoot{
+    position: fixed;
+    background-color: #5F835F;
+    text-align: center;
+    width: 33.33%;
+    transition-property: bottom;
+    transition-duration: 1s;
+}
+
+.topfooter > div.topfoot:hover{
+    bottom: 20px;
+    transition-property: bottom;
+    transition-duration: 0.6s;
+}
+
+
+.topfooter  span{
+    display: inline-block;
+    width: 100%;
+    background-color: #000;
+    color: #DDD;
+    opacity: 0.4;
+    height: 20px;
+    position: relative;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  TopFoot 1 +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+.topfooter > div.topfoot1{
+    bottom: -60px;
+    height: 100px;
+    left: 0;
+}
+
+.topfooter > div.topfoot1:hover{
+    bottom: -12px;
+}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  TopFoot 2 +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.topfooter > div.topfoot2{
+    left: 0px;
+    bottom: -60px;
+    height: 100px;
+    margin : 0 33.33%;
+    /*background-color: #0F0;*/
+}
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  TopFoot 3 +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.topfooter > div.topfoot3{
+    bottom: -60px;
+    height: 100px;
+    right: 0;
+    /*background-color: #00F;*/
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  Légende (Vue “prévionnelle”) +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.topfooter > div.topfoot1.legende{
+    bottom: -60px;
+    height: 100px;
+    left: 0;
+    background-color: #F00;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++  Actions +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 .actions_infos {
     font-size: 0.9em;
@@ -178,80 +263,3 @@ div.actions {
     margin-right:5px;
 }
 
-/* +++++++++++++++++++++++++++++++++++++++++++++  FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    background-color: #5F835F;
-    text-align: center;
-    width:100%;
-}
-
-footer > .version{
-    z-index: 3000;
-}
-
-/* +++++++++++++++++++++++++++++++++++++++++++++  TOP FOOTER +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
-.topfooter > div.actions,
-.topfooter > div.prefs,
-.topfooter > div.affichage{
-    background-color: #5F835F;
-    text-align: center;
-    position: fixed;
-    width: 33.33%;
-    transition-property: bottom;
-    transition-duration: 1s;
-}
-
-.topfooter > div.actions:hover,
-.topfooter > div.prefs:hover,
-.topfooter > div.affichage:hover{
-    bottom: 20px;
-    transition-property: bottom;
-    transition-duration: 0.6s;
-}
-
-
-.topfooter  span{
-    display: inline-block;
-    width: 100%;
-    background-color: #000;
-    color: #DDD;
-    opacity: 0.4;
-    height: 20px;
-    position: relative;
-}
-
-/* - - - - - - Actions - - - -  */
-
-.topfooter > div.actions{
-    bottom: -60px;
-    height: 100px;
-    left: 0;
-    /*background-color: #F00;*/
-}
-
-
-/* - - - - - - Prefs - - - -  */
-
-.topfooter > div.prefs{
-    left: 0px;
-    bottom: -60px;
-    height: 100px;
-    margin : 0 33.33%;
-    /*background-color: #0F0;*/
-}
-
-
-/* - - - - - - Affichage - - - -  */
-
-.topfooter > div.affichage{
-    bottom: -60px;
-    height: 100px;
-    right: 0;
-    /*background-color: #00F;*/
-}

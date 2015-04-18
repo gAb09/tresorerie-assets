@@ -9,3 +9,8 @@
     width: 27%;
     min-width: 270px;
 }
+
+.topfooter > div.legende:hover{
+    bottom: 104px;
+}
+
