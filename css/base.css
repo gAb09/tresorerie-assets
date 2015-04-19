@@ -70,9 +70,11 @@ strong{
 
 .btn-actions,
 .badge-locale {
+    display: block;
   float: left;
-  margin-right: 10px;
+  /*margin-right: 10px;*/
   width: auto;
+  font-size: 13px;
 }
 
 .badge>a, .label>a {
@@ -98,7 +100,6 @@ strong{
 .btn-edit {
   background-image: linear-gradient(to bottom, #bfb450, #cc9406);
   color: #FFF;
-  background-repeat: unset;
   text-shadow: none;
 }
 
