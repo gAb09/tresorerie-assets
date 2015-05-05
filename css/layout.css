@@ -118,7 +118,6 @@ nav.navmodes ul li, ul.navconfig {
 
     /* +++++++++++++++++++++++++++++++++++++++++++++  TOP CONTENT +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
     .topcontent{
-       background-color: #EDDCC1;
        position:fixed;
        top:0;
        height:56px;
@@ -218,8 +217,8 @@ footer > .version{
 
 .topfooter > div.topfoot2{
     left: 0px;
-    bottom: -60px;
-    height: 100px;
+    bottom: -150px;
+    height: 190px;
     margin : 0 33.33%;
     /*background-color: #0F0;*/
 }
