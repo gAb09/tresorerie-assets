@@ -1,6 +1,6 @@
 /*----------   Boîte de confirmation de suppression (toutes pages) -----------*/
-function confirmation() {
-	var conf = confirm( "Voulez vous vraiment supprimer cet enregistrement ?" ) ;
+function confirmation(msg) {
+	var conf = confirm(msg) ;
 	if( !conf )
 	{
 		return false;
