@@ -92,9 +92,10 @@ table tr:hover{
 }
 
 td.note{
-    border-style: dashed none;
-    border-width: 1px;
-    border-color: red;
+    background-color: #F9EAD2;
+    /*border-style: dashed none;*/
+    /*border-width: 1px;*/
+    /*border-color: red;*/
 }
 
 caption.ligne_mois{
