@@ -3,7 +3,15 @@ function basculeReportable(ligne, path) {
 	if (ligne.className === ""){
 		ligne.className = "reportable";
 	}else
-		ligne.className = "";
+	ligne.className = "";
 
+	var xhr = getXMLHttpRequest();
+
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState == 4 && (xhr.status == 200 || xhr.status === 0)) {
+
+		}
+		xhr.open("GET", "reports/setReportable/"+ligne.id, true);
+		xhr.send(null);
+	};
 }
-
